@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>.:: RBox Help Task ::.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- adding style begins -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/app.css">
+    <!-- adding style ends -->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="help-section">
+                    <div class="help-button open" onclick="rbox.openHelpDialog()">
+                        ?
+                    </div>
+                    <div class="detail-section">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" id="chat-nav"><a href="#chat-section " aria-controls="chat-section" role="tab" data-toggle="tab"><i class="fa fa-commenting"></i> Live Chat</a></li>
+                            <li role="presentation" id="faq-nav"><a href="#faq-section" aria-controls="faq-section" role="tab" data-toggle="tab"><i class="fa fa-search"></i> FAQ</a></li>
+                            <li role="presentation" id="mail-nav" class="active"><a href="#mail-section" aria-controls="mail-section" role="tab" data-toggle="tab"><i class="fa fa-envelope-o"></i> Mail Us</a></li>
+                            <li role="presentation" id="close-nav"><a href="javascript:;" onclick="rbox.closeHelpDialog()" aria-controls="settings" role="tab"><i class="fa fa-times"></i></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade" id="chat-section">
+                                Home Screen
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid rem perspiciatis sit corrupti corporis cupiditate laborum non quos voluptate voluptas repudiandae, deleniti minima architecto. Aspernatur nostrum consectetur excepturi mollitia iusto.
+                                <br/><br/>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit asperiores fugiat totam itaque tenetur perferendis laborum ducimus minus quam earum ex a mollitia molestias fugit, illum repellat recusandae ab esse.
+                                <br/><br/>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit asperiores fugiat totam itaque tenetur perferendis laborum ducimus minus quam earum ex a mollitia molestias fugit, illum repellat recusandae ab esse.
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="faq-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div id="prefer-email-container">
+                                                <div class="heading">Prefer email instead?</div>
+                                                <button class="btn btn-default btn-sm">
+                                                    <i class="fa fa-envelope-o"></i> Write to us
+                                                </button>
+                                                <div class="sub-heading">We are super quick in responding to your queries.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="row">
+                                                <div class="col-sm-11">
+                                                    <div id="faq-list-section">
+                                                        <div class="search-bar">
+                                                            <input type="text" class="form-control" placeholder="What can we help you with? Start typing your question..."/>
+                                                            <span class="fa fa-search"></span>
+                                                        </div>
+                                                        <div class="row faq-items">
+                                                            <div class="col-xs-4">
+                                                                <div class="faq-item">
+                                                                    <i class="fa fa-folder-o"></i>
+                                                                    Sharing Openings
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4">
+                                                                <div class="faq-item">
+                                                                    <i class="fa fa-signing"></i>
+                                                                    Managing Openings
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4">
+                                                                <div class="faq-item">
+                                                                    <i class="fa fa-address-card"></i>
+                                                                    Managing Candidates
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row faq-items">
+                                                            <div class="col-xs-4">
+                                                                <div class="faq-item">
+                                                                    <i class="fa fa-folder"></i>
+                                                                    Account Management
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4">
+                                                                <div class="faq-item">
+                                                                    <i class="fa fa-folder"></i>
+                                                                    Sourcing Candidates
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4">
+                                                                <div class="faq-item">
+                                                                    <i class="fa fa-folder"></i>
+                                                                    Reporting
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane active fade in" id="mail-section">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="alert alert-success">
+                                            <i class="fa fa-check"></i> Message Sent! Thanks for reaching out! Someone from our team will get back to you soon.
+                                        </div>
+
+                                        <form>
+                                            <div class="form-group email">
+                                                <input type="email" name="to" class="form-control" id="to" placeholder="Email" value="support@recruiterbox.com" readonly="true" disabled="disabled"/>
+                                                <span>To</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" name="subject" class="form-control" id="to" placeholder="Subject" />
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="message" rows="5"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="file-attach pull-left">
+                                                    <input type="file" name="file" id="file"/>
+                                                    <label for="file"><i class="fa fa-paperclip"></i> Attach files</label>
+                                                </div>
+                                                <button class="btn btn-primary pull-right" onclick="rbox.sendMessage(event)">Send Mail</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- adding scripts begins -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="dist/js/app.min.js"></script>
+    <!-- adding scripts ends -->
+</body>
+</html>
