@@ -93,6 +93,7 @@ body {
                         color: #a1a1a1;
                     }
                     z-index: 3;
+                    transform: translateZ(10px);
                     &::before {
     	                border-top-width: 1px;
                         background: #eeeeee;
